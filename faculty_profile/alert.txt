@@ -1,0 +1,30 @@
+<html>
+<script>
+function validate(){
+var nn=document.form.name.value;
+var num=document.form.number.value;
+if(nn==""){
+  alert("Enter Name");
+  document.form.name.focus();
+  return false;
+}
+else{
+  document.form.number.focus();
+  document.form.number.disabled=false;
+if(num==""){
+   alert("Enter Number");
+   return false;
+}
+}
+return true;
+}
+</script>
+<form name="form" onsubmit="javascript:return validate();">
+<table>
+<tr><td>Enter Name:</td><td><input type="text" name="name"></td></tr>
+<tr><td>Enter Number:</td><td><input type="text" disabled name="number"></td></tr>
+<tr><td></td><td><input type="submit" value="Submit"></td></tr>
+</table>
+</form>
+</html>
+

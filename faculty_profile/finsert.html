@@ -1,0 +1,62 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">	<head>
+<script>
+function validate(){
+var nn=document.finsert.pwd.value;
+var num=document.finsert.eid.value;
+if(nn==""){
+  alert("Enter password");
+  document.finsert.pwd.focus();
+  return false;
+}
+else if(num==""){
+  document.finsert.eid.focus();
+   alert("Enter email id");
+   return false;
+}
+else if(num !="" || nn!="")
+{
+  if(nn.length() < 8 || nn.legth() > 8)
+  {
+   alert("Password must be 8 characters");
+  }
+document.finsert.action("f5temp.jsp");
+
+}
+return true;
+}
+
+
+
+</script>
+
+
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><title>Cummins College of Engineering for Women</title><link rel="stylesheet" type="text/css" href="css/style.css" /><link rel="stylesheet" type="text/css" href="css/brown.css" /></head><body text=A52A2A><div id="outline">	<div id="wrapper">	<!-- START HEADER --><div id="header">
+<div id="headerBox">
+<p style="font-size:50px;"></p>
+</div></div><!-- END HEADER -->
+<!-- START FORM --><div class="form">
+<center><h4>Add New User</h4><form name="finsert" onsubmit="javascript:return validate();" method="post"><div class="formLeft">
+<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password:<br />
+</div><div class="formRight">
+<input type="password" name="pwd" /></div>
+<br>
+<br>
+<div class="formLeft">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email ID   :
+</div>
+<div class="formRight">
+<input type="text" name="eid" /> 
+ *<br /><br /><input class="submit" type="submit" value="Add" /> 
+
+<input class="submit" type="reset" value="Cancel" />
+<a href="adminfunc.html">
+<input class="submit" type="submit" value="Back" >
+</a>
+<br /></div></form> </div><!-- END FORM --></div></div></center></body></html>

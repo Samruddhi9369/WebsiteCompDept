@@ -1,0 +1,124 @@
+<%@page import="java.sql.*" %>
+<%@page import="java.io.*" %>
+<%@page import="java.awt.Dialog" %>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Update Page</title>
+</head>
+
+<body>
+<table>
+
+<tr><td><center>Sr No:</center></td><td><center>
+<input type="text" name="sr_no"></center></td></tr>
+
+<tr><td>Name:</td><td><input type="text" name="fname"></td></tr>
+
+<tr><td>Date Of Birth</td><td><input type="text" name="dob"></td></tr>
+
+<tr><td>Address:</td><td><input type="text" name="addr"></td></tr>
+
+<tr><td>Phone No:</td><td><input type="text" name="pno">
+
+</td></tr>
+
+<tr><td>Email_id:</td><td><input type="text" name="eid">
+
+</td></tr>
+
+<tr><td>Examination:</td><td><input type="text" name="exam">
+
+</td></tr>
+<tr><td>University:</td><td><input type="text" name="univ">
+
+</td></tr>
+<tr><td>Year:</td><td><input type="text" name="year">
+
+</td></tr>
+<tr><td>Percentage:</td><td><input type="text" name="per">
+
+
+</td></tr>
+<tr><td>Class:</td><td><input type="text" name="class">
+
+</td></tr>
+<tr><td></td><td><input type="submit" value="Submit"></td></tr>
+</center>
+</table>
+
+<% 
+int flag=0;
+Connection con;
+PreparedStatement pst;
+ResultSet reset=NULL;
+ResultSet rs1;
+try
+{
+	int in=Integer.parseInt(request.getParameter("sr_no"));     
+
+	Class.forName("sun.jdbc.odbc.JdbcOdbcDriver");
+           
+                String database = "C:\\Program Files\\Apache Software Foundation\\Tomcat 6.0\\webapps\\examples\\jsp\\sdtl.mdb"; 
+
+                String url = "jdbc:odbc:Driver={Microsoft Access Driver (*.mdb)};DBQ=" + database + " ";
+
+                Connection con = DriverManager.getConnection(url);
+
+                 Statement stm=con.createStatement();
+	
+                  reset=stm.executeQuery("select * from finfo where sno="+in+" ");
+out.println("1ghghghghgh");				
+                  while(reset.next())
+		{	
+				%>
+			        Sr No:<%
+out.println("1");				
+out.println(reset.getInt("sno"));%>
+				<br/><br/>
+				Name:
+				<%out.print(reset.getString("Name"));
+				 %><br/><br/>
+                                                                 DOB:<%
+				out.println(reset.getString("dob"));
+				%><br/><br/>Address:<%
+				out.println(reset.getString("addr"));
+				%><br/><br/>Phone Number:<%
+				out.println(reset.getInt("pno"));
+				%><br/><br/>Email ID:<%
+				out.println(reset.getString("eid"));
+				%><br/><br/>Exam:<%
+				out.println(reset.getString("exam"));
+				%><br/><br/>University:<%
+				out.println(reset.getString("uni"));
+				%><br/><br/>Year: <%
+				out.println(reset.getInt("year"));
+				%><br/><br/>
+
+                                                                Percentage:<%
+				out.println(reset.getInt("per"));
+                        			%><br/><br/>
+
+	
+				Class:<%
+				out.println(reset.getString("class"));
+                        		                <br/><br/>
+
+		}
+		
+}
+
+catch(Exception e)
+{
+    out.println("account creation failed due to "+e);
+}
+
+
+%>
+
+</body>
+</html>
