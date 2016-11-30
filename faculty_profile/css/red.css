@@ -1,0 +1,55 @@
+/* RED */
+
+body { background: #f99fa6 url(galaxy.gif) repeat; }
+
+#outline { border: 1px solid #9A0A14; }
+
+#wrapper { background: #fff url(border1.gif) repeat-x 0 260px; border: 15px solid #fff; }
+
+#header { background-color: #f99fa6; 
+	background: url(red-roses-photo.jpg) repeat; 
+	border-bottom: 5px solid #fff;
+	color: #fff; 
+}
+
+#headerBox { border: 1px solid #9A0A14; color: #fff; }
+
+#navTop { background: #9A0A14 url(trans1.png) repeat-x 0 0; border-bottom: 5px solid #fff; }
+#navTop a:hover { background-color: #60060d; color: #fff; }
+#navTop #current a { background-color: #f99fa6; color: #000; }
+#navTop li ul { border: 1px solid #9A0A14; background: #f99fa6;}
+#navTop li ul li a { color: #000; }
+
+#footer { background: #fff url(border2.gif) repeat-x 0 0; border-top: 1px solid #9A0A14; }
+
+#sidebar ul { border-top: 1px solid #9A0A14; }
+#sidebar li a:hover { color: #000; background: #fccfd2; }
+#sidebar li a {	color: #00488F;	border-bottom: 1px solid #9A0A14; }
+
+a {	color: #9A0A14; }
+
+.border {
+	background-color: #fccfd2;
+	border-top: 2px solid #9A0A14;
+	border-bottom: 2px solid #9A0A14;
+}
+
+img.left { border: 1px solid #9A0A14; }
+img.right {	border: 1px solid #9A0A14; }
+img.center { border: 1px solid #9A0A14; }
+img:hover { border: 1px dashed #9A0A14; }
+
+img  {
+	-webkit-box-shadow: 2px 2px 5px #9A0A14;
+	-moz-box-shadow: 2px 2px 5px #9A0A14;
+	box-shadow: 2px 2px 5px #9A0A14;
+}
+
+input, textarea { border: 1px solid #9A0A14;  }
+input:focus, textarea:focus { background-color: #fccfd2; border: 1px dashed #9A0A14; }
+
+.submit { 
+	background: #9A0A14 url(trans2.png) repeat-x 0 0;
+	border: 1px solid #9A0A14;
+	color: #fff;
+}

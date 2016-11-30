@@ -1,0 +1,56 @@
+/* GREEN */
+
+body { background: #bbe2b6 url(bg-green.png) repeat; }
+
+#outline { border: 1px solid #3E8735; }
+
+#wrapper { background: #fff url(border1.gif) repeat-x 0 260px; border: 15px solid #fff; }
+
+#header { background-color: #bbe2b6; 
+	background: url(banner-green.jpg) no-repeat; 
+	border-bottom: 5px solid #fff;
+	color: #fff; 
+}
+
+#headerBox { border: 1px solid #3E8735; color: #fff; }
+
+#navTop { background: #3E8735 url(trans1.png) repeat-x 0 0; border-bottom: 5px solid #fff; }
+
+#footer { background: #fff url(border2.gif) repeat-x 0 0; border-top: 1px solid #3E8735; }
+
+#navTop a:hover { background-color: #11250e; color: #fff; }
+#navTop #current a { background-color: #bbe2b6; color: #000; }#navTop li ul { border: 1px solid #576675; background: #E2E6E9;}
+#navTop li ul { border: 1px solid #3E8735; background: #ddf1da;}
+#navTop li ul li a { color: #000; }
+
+#sidebar ul { border-top: 1px solid #3E8735; }
+#sidebar li a:hover { color: #000; background: #ddf1da; }
+#sidebar li a { color: #00488F; border-bottom: 1px solid #3E8735; }
+
+a {	color: #3E8735; }
+
+.border {
+	background-color: #ddf1da;
+	border-top: 2px solid #3E8735;
+	border-bottom: 2px solid #3E8735;
+}
+
+img.left { border: 1px solid #3E8735; }
+img.right {	border: 1px solid #3E8735; }
+img.center { border: 1px solid #3E8735; }
+img:hover { border: 1px dashed #3E8735; }
+
+img  {
+	-webkit-box-shadow: 2px 2px 5px #3E8735;
+	-moz-box-shadow: 2px 2px 5px #3E8735;
+	box-shadow: 2px 2px 5px #3E8735;
+}
+
+input, textarea { border: 1px solid #3E8735;  }
+input:focus, textarea:focus { background-color: #ddf1da; border: 1px dashed #3E8735; }
+
+.submit { 
+	background: #3E8735 url(trans2.png) repeat-x 0 0;
+	border: 1px solid #3E8735;
+	color: #fff;
+}
