@@ -1,2 +1,4 @@
 # WebsiteCompDept
-WEbsite for Computer Department using Java, JSP
+Website for Computer Department using Java, JSP
+
+A common platform for students and faculty members using JSP and JDBC.
